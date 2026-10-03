@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Bunny - Privacy policy</title>
+<style>
+  :root { --bg: #f6f1e9; --paper: #fffdf8; --ink: #2e2a26; --soft: #6b6259; --line: #e4dacb; --accent: #e07a5f; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1d1a17; --paper: #2a2622; --ink: #f3ece2; --soft: #c2b8ab; --line: #3a342e; --accent: #ec8a6f; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  .card { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 28px clamp(18px, 4vw, 40px); }
+  h1 { margin: 0 0 4px; font-size: 32px; } h2 { margin-top: 32px; font-size: 20px; }
+  .sub { color: var(--soft); margin: 0 0 24px; } a { color: var(--accent); } li { margin: 6px 0; }
+  nav { margin-bottom: 16px; font-size: 15px; } nav a { margin-right: 14px; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="support.html">Help</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+<div class="card">
+<h1>Privacy policy</h1>
+<p class="sub">Project Bunny for Windows · last updated 3 October 2026</p>
+<p><b>Short version: Project Bunny doesn't collect anything about you.</b> Your diary - your voice, your words, your pictures and the people in them - is processed and stored on your own computer. There is no account, no cloud, no analytics and no advertising, and we (the developer) never receive your diary.</p>
+<h2>What stays on your computer</h2>
+<ul>
+  <li><b>Recordings and diary pages.</b> Speech is turned into text, titles, feelings and pictures by AI models running on your computer. Nothing is uploaded.</li>
+  <li><b>Your character and the people you add.</b> If you use a photo, it's read on your computer to describe things like hair and glasses, and it may be used as a likeness reference for that person's painted portrait; the photo itself is then deleted. The painted portrait is kept.</li>
+  <li><b>Handwritten diary pages</b> you photograph are read on your computer.</li>
+  <li><b>Your PIN and recovery code</b> are stored only as salted hashes. The PIN keeps casual eyes out; it doesn't encrypt your files.</li>
+  <li><b>Small log files</b> (in the logs folder) record app events like "picture painted" to help fix problems. They don't contain your diary text.</li>
+</ul>
+<h2>Where your diary lives, and how to delete it</h2>
+<ul>
+  <li>Microsoft Store version: in the "Project Bunny" folder inside your Windows user folder (C:\Users\you\Project Bunny). It's kept there on purpose so uninstalling the app doesn't wipe your diary.</li>
+  <li>Version installed with the setup program: in your Windows profile's app-data folder (com.projectbunny.app).</li>
+  <li>To remove everything: Settings → Delete my diary. Then uninstall the app if you like.</li>
+  <li>Your diary is stored as normal files, which Windows protects with Device encryption or BitLocker if that's turned on. Settings shows whether it is.</li>
+</ul>
+<h2>Copies you make</h2>
+<ul>
+  <li><b>Backups</b> are saved where you choose, by default Documents\Project Bunny Backups. If OneDrive syncs your Documents folder, those backup files are copied to OneDrive; the app tells you when that's the case. You can protect a backup with a password (it's then encrypted with XChaCha20-Poly1305).</li>
+  <li><b>Pictures you save</b> with "Save as image" go to Pictures\Project Bunny (which OneDrive may sync too); printed pages and PDFs go wherever you send them.</li>
+</ul>
+<h2>When Project Bunny uses the internet</h2>
+<ul>
+  <li><b>Downloading the AI models</b> (once, when you set up) from huggingface.co, and, in the setup-program version only, the AI engines from github.com. These are plain file downloads: nothing about you or your diary is sent, though those sites see a normal download request (such as your IP address), like any website.</li>
+  <li><b>Checking your licence.</b> The Microsoft Store version asks Windows whether this copy is in its free trial or bought. Purchases are handled by Microsoft under the Microsoft privacy statement (privacy.microsoft.com); we receive no payment or personal details.</li>
+  <li>After the download, Project Bunny works offline.</li>
+</ul>
+<h2>Sending photos from your phone</h2>
+<p>"From my phone" opens a temporary page on your own Wi-Fi so your phone can send a photo straight to your computer. It never goes over the internet. Each photo is encrypted on your phone with a key from the QR code before it travels, the page needs a secret code from the QR code, and it closes after 10 minutes.</p>
+<h2>Reports you choose to send</h2>
+<p>If you use "Something wrong?" to report a picture or text, Project Bunny opens an email in your own email app, addressed to <a href="mailto:memoriverde@gmail.com">memoriverde@gmail.com</a>. You see exactly what it says and send it yourself. It contains no diary text unless you tick the box to include the AI's description. We use reports only to fix and improve the app, and you can ask us to delete yours.</p>
+<h2>Windows Hello</h2>
+<p>If you forget your PIN, you can confirm it's you with Windows Hello. That check is done by Windows; Project Bunny only learns whether it succeeded.</p>
+<h2>Gentle care</h2>
+<p>When an entry sounds very painful, the app may show helplines for your country, chosen from your Windows region setting. This happens on your computer; nobody is told. Helpline numbers can change.</p>
+<h2>Children</h2>
+<p>Project Bunny is for people aged 13 and over, and it doesn't collect personal information from anyone.</p>
+<h2>Changes and contact</h2>
+<p>If this policy changes, the new version will be shown in the app and on this page, with a new date. Questions or requests: <a href="mailto:memoriverde@gmail.com">memoriverde@gmail.com</a>.</p>
+</div>
+</main>
+</body>
+</html>
